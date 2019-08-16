@@ -1,4 +1,28 @@
 {
   "name": "md-links",
-  "version": "0.1.0"
+  "version": "0.1.0",
+  "description": "## Preámbulo",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/26erika/GDL003-md-links.git"
+  },
+  "author": "Erika Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/26erika/GDL003-md-links/issues"
+  },
+  "homepage": "https://github.com/26erika/GDL003-md-links#readme",
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "dependencies": {
+    "moment": "^2.24.0"
+  }
 }
