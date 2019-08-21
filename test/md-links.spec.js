@@ -1,16 +1,19 @@
 const mdLinks = require('../index.js');
 
 
-describe('mdLinks', () => {
+describe('checkMd', () => {
 
   it('should return true for a valid .md file', () => {
-    expect(mdLinks("../README.md")).toBe (true);
-    console.log('FIX ME!');
+    expect(mdLinks.checkMd("../README.md")).toBe (true);
   });
   it('should return false for a invalid .md file', () => {
-    expect(mdLinks("../index.js")).toBe (false);
-    console.log('FIX ME!');
+    expect(mdLinks.checkMd("../index.js")).toBe (false);
   });
-
 });
 
+describe('readFileMd', () => {
+
+  it('should return true for read .md file', () => {
+    expect(mdLinks.readFileMd('README.md')).toBe ("https://"|"https://");
+  });
+});
