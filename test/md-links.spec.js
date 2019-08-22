@@ -14,6 +14,13 @@ describe('checkMd', () => {
 describe('readFileMd', () => {
 
   it('should return true for read .md file', () => {
-    expect(mdLinks.readFileMd('README.md')).toBe ("https://"|"https://");
+    expect(mdLinks.readFileMd('.md')).toBe(true);
+  });
+});
+
+describe('findLinksMd', () => {
+
+  it('should return true if find the links', () => {
+    expect(mdLinks.findLinksMd('.md')).toBe(true);
   });
 });
