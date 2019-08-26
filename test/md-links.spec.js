@@ -24,3 +24,10 @@ describe('findLinksMd', () => {
     expect(mdLinks.findLinksMd('.md')).toBe(true);
   });
 });
+
+describe('validateLinks', () => {
+
+  it('should return ok if the links are active', () => {
+    expect(mdLinks.validateLinks('prueba.md')).toBe(200);
+  });
+});
