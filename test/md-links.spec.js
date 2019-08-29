@@ -27,7 +27,15 @@ describe('findLinksMd', () => {
 
 describe('validateLinks', () => {
 
-  it('should return ok if the links are active', () => {
-    expect(mdLinks.validateLinks('prueba.md')).toBe(200);
+  it('should validateLinks as function', () => {
+    expect(typeof mdLinks.validateLinks).toEqual('function');
   });
 });
+
+describe('statsLinks', () => {
+
+  it('should statsLinks as function', () => {
+    expect(typeof mdLinks.statsLinks).toEqual('function');
+  });
+});
+
