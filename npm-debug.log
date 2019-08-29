@@ -1,45 +1,95 @@
 0 info it worked if it ends with ok
-1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'run', 'test' ]
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'publish' ]
 2 info using npm@3.5.2
 3 info using node@v8.10.0
-4 verbose run-script [ 'pretest', 'test', 'posttest' ]
-5 info lifecycle md-links@0.1.0~pretest: md-links@0.1.0
-6 silly lifecycle md-links@0.1.0~pretest: no script for pretest, continuing
-7 info lifecycle md-links@0.1.0~test: md-links@0.1.0
-8 verbose lifecycle md-links@0.1.0~test: unsafe-perm in lifecycle true
-9 verbose lifecycle md-links@0.1.0~test: PATH: /usr/share/npm/bin/node-gyp-bin:/home/laboratoria-183/laboratoria/GDL003-md-links/node_modules/.bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
-10 verbose lifecycle md-links@0.1.0~test: CWD: /home/laboratoria-183/laboratoria/GDL003-md-links
-11 silly lifecycle md-links@0.1.0~test: Args: [ '-c', 'jest --coverage' ]
-12 silly lifecycle md-links@0.1.0~test: Returned: code: 1  signal: null
-13 info lifecycle md-links@0.1.0~test: Failed to exec test script
-14 verbose stack Error: md-links@0.1.0 test: `jest --coverage`
-14 verbose stack Exit status 1
-14 verbose stack     at EventEmitter.<anonymous> (/usr/share/npm/lib/utils/lifecycle.js:232:16)
-14 verbose stack     at emitTwo (events.js:126:13)
-14 verbose stack     at EventEmitter.emit (events.js:214:7)
-14 verbose stack     at ChildProcess.<anonymous> (/usr/share/npm/lib/utils/spawn.js:24:14)
-14 verbose stack     at emitTwo (events.js:126:13)
-14 verbose stack     at ChildProcess.emit (events.js:214:7)
-14 verbose stack     at maybeClose (internal/child_process.js:925:16)
-14 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
-15 verbose pkgid md-links@0.1.0
-16 verbose cwd /home/laboratoria-183/laboratoria/GDL003-md-links
-17 error Linux 4.15.0-55-generic
-18 error argv "/usr/bin/node" "/usr/bin/npm" "run" "test"
-19 error node v8.10.0
-20 error npm  v3.5.2
-21 error code ELIFECYCLE
-22 error md-links@0.1.0 test: `jest --coverage`
-22 error Exit status 1
-23 error Failed at the md-links@0.1.0 test script 'jest --coverage'.
-23 error Make sure you have the latest version of node.js and npm installed.
-23 error If you do, this is most likely a problem with the md-links package,
-23 error not with npm itself.
-23 error Tell the author that this fails on your system:
-23 error     jest --coverage
-23 error You can get information on how to open an issue for this project with:
-23 error     npm bugs md-links
-23 error Or if that isn't available, you can get their info via:
-23 error     npm owner ls md-links
-23 error There is likely additional logging output above.
-24 verbose exit [ 1, true ]
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/laboratoria-183/laboratoria/GDL003-md-links',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/laboratoria-183/.npm/md-links/0.1.0/package.tgz not in flight; packing
+9 info lifecycle md-links@0.1.0~prepublish: md-links@0.1.0
+10 silly lifecycle md-links@0.1.0~prepublish: no script for prepublish, continuing
+11 verbose tar pack [ '/home/laboratoria-183/.npm/md-links/0.1.0/package.tgz',
+11 verbose tar pack   '/home/laboratoria-183/laboratoria/GDL003-md-links' ]
+12 verbose tarball /home/laboratoria-183/.npm/md-links/0.1.0/package.tgz
+13 verbose folder /home/laboratoria-183/laboratoria/GDL003-md-links
+14 verbose addLocalTarball adding from inside cache /home/laboratoria-183/.npm/md-links/0.1.0/package.tgz
+15 silly cache afterAdd md-links@0.1.0
+16 verbose afterAdd /home/laboratoria-183/.npm/md-links/0.1.0/package/package.json not in flight; writing
+17 verbose afterAdd /home/laboratoria-183/.npm/md-links/0.1.0/package/package.json written
+18 silly publish { name: 'md-links',
+18 silly publish   version: '0.1.0',
+18 silly publish   description: '## Preámbulo',
+18 silly publish   main: 'index.js',
+18 silly publish   directories: { test: 'test' },
+18 silly publish   scripts: { test: 'jest --coverage' },
+18 silly publish   repository:
+18 silly publish    { type: 'git',
+18 silly publish      url: 'git+https://github.com/26erika/GDL003-md-links.git' },
+18 silly publish   author: { name: 'Erika Sanchez' },
+18 silly publish   license: 'ISC',
+18 silly publish   bugs: { url: 'https://github.com/26erika/GDL003-md-links/issues' },
+18 silly publish   homepage: 'https://github.com/26erika/GDL003-md-links#readme',
+18 silly publish   devDependencies: { jest: '^24.8.0' },
+18 silly publish   dependencies: { moment: '^2.24.0', 'node-fetch': '^2.6.0' },
+18 silly publish   readme: '# Steps to create a file reader `Markdown`.\n\n![caution-gif](https://media.giphy.com/media/FmLecXUlTqZ6o/giphy.gif)\n\nYou may be thinking of using **node.js**, which is a tool that helps you read and analyze files in **Markdown** format, to verify that the links are active or not and to be able to show statistics.\n\n## How would be the path to validate **Markdown** files?\nThis is the flow chart in which the trajectory of the tool to validate markdown files is shown.\n\n![flow-chart](https://i.ibb.co/0GV6rqL/Captura-de-pantalla-de-2019-08-15-23-59-48.png)\n\n### ejemplo para ver si lee otros links\n\nhttp://community.laboratoria.la/t/testear-una-promesa-con-jest/736/1\n\nhttps://jaketrent.com/post/javascript-arrow-function-return-rul',
+18 silly publish   readmeFilename: 'README.md',
+18 silly publish   gitHead: '5eb174780ef82a1ae034dedd0f97543f280a69af',
+18 silly publish   _id: 'md-links@0.1.0',
+18 silly publish   _shasum: 'f9e8649648772481d4e6c4eb5b63641a88e54465',
+18 silly publish   _from: '.' }
+19 verbose getPublishConfig undefined
+20 silly mapToRegistry name md-links
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/md-links
+24 verbose publish registryBase https://registry.npmjs.org/
+25 silly publish uploading /home/laboratoria-183/.npm/md-links/0.1.0/package.tgz
+26 verbose request uri https://registry.npmjs.org/md-links
+27 verbose request sending authorization for write operation
+28 info attempt registry request try #1 at 6:27:33 PM
+29 verbose request using bearer token for auth
+30 verbose request id 350c314d79227bbf
+31 http request PUT https://registry.npmjs.org/md-links
+32 http 403 https://registry.npmjs.org/md-links
+33 verbose headers { date: 'Thu, 29 Aug 2019 23:27:35 GMT',
+33 verbose headers   'content-type': 'application/json',
+33 verbose headers   'transfer-encoding': 'chunked',
+33 verbose headers   connection: 'keep-alive',
+33 verbose headers   'set-cookie':
+33 verbose headers    [ '__cfduid=dfe797112097d9bab759e20a456d30aa51567121254; expires=Fri, 28-Aug-20 23:27:34 GMT; path=/; domain=.npmjs.org; HttpOnly' ],
+33 verbose headers   'cf-ray': '50e24be20e929a92-MFE',
+33 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+33 verbose headers   vary: 'Accept-Encoding',
+33 verbose headers   server: 'cloudflare',
+33 verbose headers   'content-encoding': 'gzip' }
+34 verbose request invalidating /home/laboratoria-183/.npm/registry.npmjs.org/md-links on PUT
+35 error publish Failed PUT 403
+36 verbose stack Error: You do not have permission to publish "md-links". Are you logged in as the correct user? : md-links
+36 verbose stack     at makeError (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+36 verbose stack     at CachingRegistryClient.<anonymous> (/usr/share/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+36 verbose stack     at /usr/share/npm/node_modules/npm-registry-client/lib/request.js:178:7
+36 verbose stack     at Gunzip.onEnd (zlib.js:131:5)
+36 verbose stack     at emitNone (events.js:111:20)
+36 verbose stack     at Gunzip.emit (events.js:208:7)
+36 verbose stack     at endReadableNT (_stream_readable.js:1064:12)
+36 verbose stack     at _combinedTickCallback (internal/process/next_tick.js:138:11)
+36 verbose stack     at process._tickCallback (internal/process/next_tick.js:180:9)
+37 verbose statusCode 403
+38 verbose pkgid md-links
+39 verbose cwd /home/laboratoria-183/laboratoria/GDL003-md-links
+40 error Linux 4.15.0-55-generic
+41 error argv "/usr/bin/node" "/usr/bin/npm" "publish"
+42 error node v8.10.0
+43 error npm  v3.5.2
+44 error code E403
+45 error You do not have permission to publish "md-links". Are you logged in as the correct user? : md-links
+46 error If you need help, you may report this error at:
+46 error     <https://github.com/npm/npm/issues>
+47 verbose exit [ 1, true ]
