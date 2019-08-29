@@ -13,4 +13,4 @@ This is the flow chart in which the trajectory of the tool to validate markdown 
 
 http://community.laboratoria.la/t/testear-una-promesa-con-jest/736/1
 
-https://jaketrent.com/post/javascript-arrow-function-return-rules/
+https://jaketrent.com/post/javascript-arrow-function-return-rul
