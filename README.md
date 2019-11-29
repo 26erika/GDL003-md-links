@@ -16,3 +16,13 @@ Then to start analyzing if your markdown file has links and if they work correct
 
 You need execute this command *node index file.md*
 
+### Dependencies
+Technologies that were used to create this project
+
+- Node.js
+- JavaScript
+- Npm
+- Git
+
+
+
