@@ -9,8 +9,10 @@ This is the flow chart in which the trajectory of the tool to validate markdown 
 
 ![flow-chart](https://i.ibb.co/0GV6rqL/Captura-de-pantalla-de-2019-08-15-23-59-48.png)
 
-### ejemplo para ver si lee otros links
+### What do you need to do to use it?
+First of all, you need to download the library with the following command *npm validate-md-links* in your terminal.
 
-http://community.laboratoria.la/t/testear-una-promesa-con-jest/736/1
+Then to start analyzing if your markdown file has links and if they work correctly run the following command in the terminal.
 
-https://jaketrent.com/post/javascript-arrow-function-return-rul
+You need execute this command *node index file.md*
+

@@ -14,7 +14,7 @@ const checkMd = (filePath) => (path.extname(filePath) === '.md');
 const readFileMd = () => {
   fs.readFile(userPath, 'utf8', (err, data) => {
     if (err);
-    console.log(data);
+    
   });
   return true;
 };
